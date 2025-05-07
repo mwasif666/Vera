@@ -3,7 +3,7 @@
   text-align: center;
   background-image: url(../../public/assets/images/About/about.png); /* Light neutral background */
   color: #333;
-  height: 100vh;
+  height: 760px;
   display: flex;
   align-items: center;
   background-position: center;
@@ -32,6 +32,9 @@
   .aboutUs h1 {
     font-size: 1rem;
     padding: 1rem;
+  }
+  .aboutUs {
+    height: 380px;
   }
 }
 @media all and (min-width: 769px) and (max-width: 992px) {
