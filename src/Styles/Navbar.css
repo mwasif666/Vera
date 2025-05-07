@@ -1,0 +1,104 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 2rem;
+  background-color: var(--mainColor);
+  color: var(--textColor);
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  padding-top: 50px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(179, 179, 179, 0.6); /* lightgray with opacity */
+  backdrop-filter: blur(8px); /* This creates the blur effect */
+  -webkit-backdrop-filter: blur(8px); /* For Safari support */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  display: flex;
+  color: rgb(56, 56, 56);
+  /* Animation setup */
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  pointer-events: none;
+  z-index: 999;
+}
+
+header .responsive_nav {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: var(--textColor);
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-family: "Bodoni";
+}
+
+nav a:hover {
+  color: var(--secondaryColor);
+}
+
+header .nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--textColor);
+  font-size: 1.8rem;
+  visibility: visible;
+  opacity: 1;
+  z-index: 1001;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+}
+
+nav .nav-close-btn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+.logo img {
+  width: 140px;
+  height: 100%;
+}
+.nav-btn svg {
+  fill: var(--primary-color);
+}
+@media all and (min-width: 300px) and (max-width: 768px) {
+  .logo img {
+    width: 100px;
+  }
+  header {
+    padding-top: 10px;
+  }
+  .nav-btn svg {
+    fill: white;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 992px) {
+  .logo img {
+    width: 120px;
+  }
+  header {
+    padding-top: 10px;
+  }
+}

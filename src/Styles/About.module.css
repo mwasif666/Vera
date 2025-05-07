@@ -1,0 +1,72 @@
+.aboutUs {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-image: url(../../public/assets/images/About/about.png); /* Light neutral background */
+  color: #333;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.aboutUs h1 {
+  font-weight: 300;
+  font-size: 2.5rem;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  color: var(--primary-color);
+}
+
+/* Responsive adjustments */
+@media all and (min-width: 300px) and (max-width: 768px) {
+  .aboutUs {
+    padding: 2rem 1rem;
+  }
+
+  .aboutUs h1 {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 992px) {
+  .aboutUs {
+    padding: 2rem 5rem;
+  }
+
+  .aboutUs h1 {
+    font-size: 1.7rem;
+    padding: 1rem;
+  }
+}
+@media all and (min-width: 993px) and (max-width: 1200px) {
+  .aboutUs {
+    padding: 2rem 8rem;
+  }
+
+  .aboutUs h1 {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+}
+
+/* Animation for subtle entrance */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.aboutUs {
+  animation: fadeIn 0.8s ease-out forwards;
+}
