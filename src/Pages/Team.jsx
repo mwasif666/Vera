@@ -72,7 +72,7 @@ const Slider2 = () => {
         <div className="row">
           <div className="col-md-7 p-0">
             <div className="image-up">
-              <img src="/assets/images/team/up.jpg" alt="" />
+              <img src="/assets/images/team/up.png" alt="" />
             </div>
           </div>
           <div className="col-md-5 p-0 team-up">
