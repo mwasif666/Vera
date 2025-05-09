@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -15,10 +16,15 @@ const Footer = () => {
           <div className="col-6 col-md-3 col-lg-2">
             <h6 className="footer-heading">Quick Menu</h6>
             <ul className="list-unstyled">
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/Products">Products</Link>
+              </li>
+              <li>
+                <Link to="/Services">Services</Link>
+              </li>
             </ul>
           </div>
           <div className="col-6 col-md-3 col-lg-2">

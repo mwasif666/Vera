@@ -2,9 +2,11 @@
   background-color: #e4e1d6;
   padding: 80px 0px;
 }
-.footer ul li {
+.footer ul li,
+.footer ul li a {
   color: var(--primary-color);
   padding-bottom: 8px;
+  text-decoration: none;
 }
 .footer-logo {
   width: 80%;
