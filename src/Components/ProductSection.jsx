@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { FiHeart, FiShoppingCart, FiX } from "react-icons/fi";
 import { FaRegHeart } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -9,14 +9,31 @@ import "swiper/css/pagination";
 import "./ProductSection.css";
 import { CgArrowLongRight } from "react-icons/cg";
 import { HiArrowLongLeft } from "react-icons/hi2";
+import { FaBars } from "react-icons/fa";
 
 const ProductSection = () => {
   // Categories for filtering
   const categories = ["All Products", "Skin Care", "Hair", "Body"];
   const [activeCategory, setActiveCategory] = useState("All Products");
   const [isLoading, setIsLoading] = useState(false);
+  const [isMobileView, setIsMobileView] = useState(false);
+  const [showFilterSidebar, setShowFilterSidebar] = useState(false);
   const prevRef = useRef(null);
   const nextRef = useRef(null);
+  useEffect(() => {
+    setFilteredProducts(products);
+
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth < 768);
+      if (window.innerWidth >= 768) {
+        setShowFilterSidebar(false);
+      }
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   // Product data with categories
   const products = [
@@ -173,21 +190,48 @@ const ProductSection = () => {
       <div className="bar-filter">
         <div className="container">
           <div className="products-header">
-            {/* Filter Tabs */}
-            <div className="filter-tabs">
-              {categories.map((category) => (
+            {isMobileView && (
+              <button
+                className="filter-mobile-toggle"
+                onClick={() => setShowFilterSidebar(true)}
+              >
+                <FaBars />
+              </button>
+            )}
+
+            <div
+              className={`filter-sidebar ${
+                showFilterSidebar ? "visible" : ""
+              } ${isMobileView ? "mobile" : ""}`}
+            >
+              {isMobileView && (
                 <button
-                  key={category}
-                  className={`filter-tab ${
-                    activeCategory === category ? "active" : ""
-                  }`}
-                  onClick={() => handleCategoryChange(category)}
-                  disabled={isLoading}
+                  className="filter-close-btn"
+                  onClick={() => setShowFilterSidebar(false)}
                 >
-                  {category}
+                  ×
                 </button>
-              ))}
+              )}
+
+              <div className="filter-tabs">
+                {categories.map((category) => (
+                  <button
+                    key={category}
+                    className={`filter-tab ${
+                      activeCategory === category ? "active" : ""
+                    }`}
+                    onClick={() => {
+                      handleCategoryChange(category);
+                      if (isMobileView) setShowFilterSidebar(false);
+                    }}
+                    disabled={isLoading}
+                  >
+                    {category}
+                  </button>
+                ))}
+              </div>
             </div>
+
             <div className="header-icons">
               <button
                 className="header-icon-btn"
@@ -256,7 +300,7 @@ const ProductSection = () => {
                   <SwiperSlide key={index}>
                     <div className="row">
                       {chunk.map((product) => (
-                        <div className="col-md-4" key={product.id}>
+                        <div className="col-md-4 col-6" key={product.id}>
                           <div className="product-card">
                             <div className="product-image">
                               <img src={product.image} alt={product.name} />
