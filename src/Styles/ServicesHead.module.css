@@ -41,6 +41,11 @@
   }
 
   .Products h1 {
+    font-size: 1.5rem;
+    padding: 0px 1rem;
+    padding-top: 30px;
+  }
+  .Products h4 {
     font-size: 1rem;
     padding: 1rem;
   }

@@ -41,6 +41,21 @@
   }
 
   .Products h1 {
+    font-size: 1.5rem;
+    padding: 0px 1rem;
+    padding-top: 30px;
+  }
+  .header-icon {
+    font-size: 20px;
+  }
+  .wishlist-icon {
+    font-size: 18px !important;
+  }
+  .wishlist-btn {
+    width: 40px;
+    height: 40px;
+  }
+  .Products h4 {
     font-size: 1rem;
     padding: 1rem;
   }

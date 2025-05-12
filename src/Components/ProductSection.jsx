@@ -325,7 +325,7 @@ const ProductSection = () => {
                             </div>
                             <div className="product-info">
                               <div className="row">
-                                <div className="col-md-7">
+                                <div className="col-lg-7">
                                   <h3 className="product-name">
                                     {product.name}
                                   </h3>
@@ -333,7 +333,7 @@ const ProductSection = () => {
                                     AED {product.price}
                                   </p>
                                 </div>
-                                <div className="col-md-5 d-flex align-items-center">
+                                <div className="col-lg-5 d-flex align-items-center">
                                   <button
                                     className="add-to-cart"
                                     onClick={() => addToCart(product)}
