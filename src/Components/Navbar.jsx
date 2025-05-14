@@ -38,9 +38,6 @@ function Navbar() {
         <Link to="/">Home</Link>
         <Link to="/Products">Products</Link>
         <Link to="/Services">Services</Link>
-        {/* Add these if you have separate pages for Ladies and Gents services */}
-        <Link to="/LadiesServices">Ladies Services</Link>
-        <Link to="/GentsServices">Gents Services</Link>
       </nav>
       <button className="nav-btn" onClick={showNavbar}>
         <span className={shouldShowWhiteIcon ? "icon-white" : "icon-black"}>
