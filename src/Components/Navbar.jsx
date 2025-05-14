@@ -9,7 +9,12 @@ function Navbar() {
   const location = useLocation();
 
   // Define pages where icon should be white
-  const whiteIconPages = ["/Services", "/LadiesServices", "/GentsServices"];
+  const whiteIconPages = [
+    "/",
+    "/Services",
+    "/LadiesServices",
+    "/GentsServices",
+  ];
   const shouldShowWhiteIcon = whiteIconPages.includes(location.pathname);
 
   const showNavbar = () => {
