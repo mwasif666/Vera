@@ -25,14 +25,16 @@ function Navbar() {
   return (
     <header>
       <div className="logo">
-        {location.pathname === "/Products" ? (
-          <img
-            src="./assets/images/logo/logo2.png"
-            alt="Logo for Products page"
-          />
-        ) : (
-          <img src="./assets/images/logo/logo.png" alt="Main logo" />
-        )}
+        <Link to="/">
+          {location.pathname === "/Products" ? (
+            <img
+              src="./assets/images/logo/logo2.png"
+              alt="Logo for Products page"
+            />
+          ) : (
+            <img src="./assets/images/logo/logo.png" alt="Main logo" />
+          )}
+        </Link>
       </div>
       <nav ref={navRef}>
         <Link to="/">Home</Link>
