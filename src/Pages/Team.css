@@ -158,6 +158,7 @@
   .item {
     height: 450px !important;
     width: 100% !important;
+    background-position: top !important;
   }
   .slider-container .col-md-1 {
     height: 100% !important;
@@ -174,7 +175,6 @@
   }
   .item {
     width: 100% !important;
-    margin: 10px 0 !important;
   }
 
   .white-overlay {
