@@ -69,7 +69,7 @@
   }
   .thumbnail-overlay img,
   .video-overlay img {
-    width: 400px;
+    width: 320px;
     height: auto;
     object-fit: contain;
   }

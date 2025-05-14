@@ -32,36 +32,54 @@ const images = [
 
 const Slider2 = () => {
   const [clickedIndex, setClickedIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    images.forEach((_, i) => {
-      gsap.to(`.item-${i}`, {
-        width: i === clickedIndex ? "40vw" : "20vw",
-        duration: 2,
-        ease: "elastic(1, .6)",
-      });
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth <= 768); // Typical mobile breakpoint
+    };
 
-      gsap.to(`.item-${i}::after`, {
-        opacity: i === clickedIndex ? 0 : 0.5,
-        duration: 0.5,
-      });
+    // Initial check
+    checkIfMobile();
 
-      gsap.to(`.item-title-${i}`, {
-        opacity: i === clickedIndex ? 1 : 0,
-        fontSize: i === clickedIndex ? "2rem" : "1rem",
-        duration: 0.5,
-      });
+    // Add event listener for window resize
+    window.addEventListener("resize", checkIfMobile);
 
-      gsap.to(`.item-subtitle-${i}`, {
-        opacity: i === clickedIndex ? 1 : 0,
-        duration: 0.5,
-        delay: 0.3,
+    // Cleanup
+    return () => window.removeEventListener("resize", checkIfMobile);
+  }, []);
+
+  useEffect(() => {
+    if (!isMobile) {
+      images.forEach((_, i) => {
+        gsap.to(`.item-${i}`, {
+          width: i === clickedIndex ? "40vw" : "20vw",
+          duration: 2,
+          ease: "elastic(1, .6)",
+        });
+
+        gsap.to(`.item-${i}::after`, {
+          opacity: i === clickedIndex ? 0 : 0.5,
+          duration: 0.5,
+        });
+
+        gsap.to(`.item-title-${i}`, {
+          opacity: i === clickedIndex ? 1 : 0,
+          fontSize: i === clickedIndex ? "2rem" : "1rem",
+          duration: 0.5,
+        });
+
+        gsap.to(`.item-subtitle-${i}`, {
+          opacity: i === clickedIndex ? 1 : 0,
+          duration: 0.5,
+          delay: 0.3,
+        });
       });
-    });
-  }, [clickedIndex]);
+    }
+  }, [clickedIndex, isMobile]);
 
   const expand = (index) => {
-    if (index !== clickedIndex) {
+    if (!isMobile && index !== clickedIndex) {
       setClickedIndex(index);
     }
   };
@@ -92,25 +110,32 @@ const Slider2 = () => {
                 <div
                   key={index}
                   className={`item item-${index} ${
-                    index !== clickedIndex ? "not-selected" : ""
+                    !isMobile && index !== clickedIndex ? "not-selected" : ""
                   }`}
                   style={{
                     backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url(${image.url})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     position: "relative",
+                    backgroundRepeat: "no-repeat",
                     border: "1px solid grey",
                   }}
                   onClick={() => expand(index)}
                 >
-                  {index !== clickedIndex && (
+                  {!isMobile && index !== clickedIndex && (
                     <div className="white-overlay"></div>
                   )}
                   <div className="item-content">
-                    <div className={`item-title item-title-${index}`}>
+                    <div
+                      className={`item-title item-title-${index}`}
+                      style={isMobile ? { opacity: 1 } : {}}
+                    >
                       {image.title}
                       {image.subtitle && (
-                        <div className={`item-subtitle item-subtitle-${index}`}>
+                        <div
+                          className={`item-subtitle item-subtitle-${index}`}
+                          style={isMobile ? { opacity: 1 } : {}}
+                        >
                           {image.subtitle.split("\n").map((line, i) => (
                             <div key={i}>{line}</div>
                           ))}

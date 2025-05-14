@@ -159,9 +159,6 @@
     height: 450px !important;
     width: 100% !important;
   }
-  .item {
-    background-size: contain !important;
-  }
   .slider-container .col-md-1 {
     height: 100% !important;
   }
@@ -174,6 +171,23 @@
   }
   .item-title {
     font-size: 2rem !important;
+  }
+  .item {
+    width: 100% !important;
+    margin: 10px 0 !important;
+  }
+
+  .white-overlay {
+    display: none !important;
+  }
+
+  .item-title,
+  .item-subtitle {
+    opacity: 1 !important;
+  }
+
+  .item-content {
+    transform: none !important;
   }
 }
 @media all and (min-width: 769px) and (max-width: 992px) {
