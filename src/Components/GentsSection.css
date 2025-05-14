@@ -78,6 +78,11 @@
   .filter-tabs {
     display: grid;
   }
+
+  .Service-name,
+  .Service-price {
+    font-size: 14px !important;
+  }
 }
 /* Backdrop for mobile */
 .filter-sidebar.mobile.visible::before {
