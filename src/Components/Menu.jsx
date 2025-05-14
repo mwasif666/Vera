@@ -26,7 +26,7 @@ const ServicesMenu = () => {
             <div
               className={styles.card}
               style={{
-                backgroundImage: "url('/assets/images/Services/ladies.png')",
+                backgroundImage: "url('/assets/images/Services/Ladies.png')",
               }}
             >
               <div className={styles.overlay}>
