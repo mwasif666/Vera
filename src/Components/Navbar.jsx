@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "../Styles/Navbar.css";
 import { Link, useLocation } from "react-router-dom";
@@ -22,6 +22,16 @@ function Navbar() {
     setIsNavOpen((prev) => !prev);
   };
 
+  const closeNavbar = () => {
+    navRef.current.classList.remove("responsive_nav");
+    setIsNavOpen(false);
+  };
+
+  // Close navbar when route changes
+  useEffect(() => {
+    closeNavbar();
+  }, [location]);
+
   return (
     <header>
       <div className="logo">
@@ -37,9 +47,15 @@ function Navbar() {
         </Link>
       </div>
       <nav ref={navRef}>
-        <Link to="/">Home</Link>
-        <Link to="/Products">Products</Link>
-        <Link to="/Services">Services</Link>
+        <Link to="/" onClick={closeNavbar}>
+          Home
+        </Link>
+        <Link to="/Products" onClick={closeNavbar}>
+          Products
+        </Link>
+        <Link to="/Services" onClick={closeNavbar}>
+          Services
+        </Link>
       </nav>
       <button className="nav-btn" onClick={showNavbar}>
         <span className={shouldShowWhiteIcon ? "icon-white" : "icon-black"}>

@@ -171,7 +171,7 @@
     margin-bottom: 0px !important;
   }
   .item-title {
-    font-size: 2rem !important;
+    font-size: 1.7rem !important;
   }
   .item {
     width: 100% !important;
@@ -188,6 +188,9 @@
 
   .item-content {
     transform: none !important;
+  }
+  .item-subtitle {
+    font-size: 0.9rem;
   }
 }
 @media all and (min-width: 769px) and (max-width: 992px) {
