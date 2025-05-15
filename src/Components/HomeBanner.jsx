@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../Styles/Banner.module.css"; // Import the CSS Module
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const HomeBanner = () => {
   return (
@@ -20,7 +21,9 @@ const HomeBanner = () => {
             className={`d-flex flex-column justify-content-end align-items-center ${styles.backimg2}`}
           >
             <h2 className={styles.sectionTitle}>Explore Our Products</h2>
-            <button className={styles.ctaButton}>SHOP HERE</button>
+            <Link to="/Products">
+              <button className={styles.ctaButton}>SHOP HERE</button>
+            </Link>
           </div>
         </Col>
       </Row>
