@@ -21,7 +21,7 @@ const HomeVideo = () => {
           .play()
           .catch((e) => console.log("Autoplay prevented:", e));
       }
-    }, 3000);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
