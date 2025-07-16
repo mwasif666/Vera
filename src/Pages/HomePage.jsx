@@ -5,11 +5,13 @@ import Team from "./Team";
 import ContactForm from "./Contact";
 
 import HomeVideo from "../Components/HomeVIdeo";
+import HomeBanner2 from "./HomeBanner2";
 
 const HomePage = () => {
   return (
     <div>
-      <HomeVideo />
+      {/* <HomeVideo /> */}
+      <HomeBanner2 />
       <HomeBanner />
       <About />
       <Team />

@@ -42,7 +42,7 @@ function Navbar() {
               alt="Logo for Products page"
             />
           ) : (
-            <img src="./assets/images/logo/logo.png" alt="Main logo" />
+            <img src="./assets/images/logo/logo2.png" alt="Main logo" />
           )}
         </Link>
       </div>
@@ -50,9 +50,9 @@ function Navbar() {
         <Link to="/" onClick={closeNavbar}>
           Home
         </Link>
-        <Link to="/Products" onClick={closeNavbar}>
+        {/* <Link to="/Products" onClick={closeNavbar}>
           Products
-        </Link>
+        </Link> */}
         <Link to="/Services" onClick={closeNavbar}>
           Services
         </Link>
