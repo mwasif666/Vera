@@ -6,6 +6,8 @@ import ContactForm from "./Contact";
 
 import HomeVideo from "../Components/HomeVIdeo";
 import HomeBanner2 from "./HomeBanner2";
+import WhyVera from "../Components/WhyChoose";
+import BlogPost from "../Components/Blog";
 
 const HomePage = () => {
   return (
@@ -15,6 +17,8 @@ const HomePage = () => {
       <HomeBanner />
       <About />
       <Team />
+      <WhyVera />
+      <BlogPost />
       <ContactForm />
     </div>
   );
