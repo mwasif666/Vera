@@ -16,7 +16,14 @@ const BlogPost = () => {
   return (
     <section className={styles.blogSection}>
       <div className="container">
-        <h1 className="text-center w-100 mb-5">Our Blog</h1>
+        <h1
+          className="text-center w-100 mb-5"
+          style={{
+            color: "#797663",
+          }}
+        >
+          Our Blog
+        </h1>
         <div className="row">
           <div className="col-md-6 my-auto">
             <div className={styles.blogCard} onClick={handleShow}>

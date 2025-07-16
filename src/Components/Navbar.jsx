@@ -38,11 +38,11 @@ function Navbar() {
         <Link to="/">
           {location.pathname === "/Products" ? (
             <img
-              src="./assets/images/logo/logo2.png"
+              src="./assets/images/logo/2.png"
               alt="Logo for Products page"
             />
           ) : (
-            <img src="./assets/images/logo/logo2.png" alt="Main logo" />
+            <img src="./assets/images/logo/2.png" alt="Main logo" />
           )}
         </Link>
       </div>
@@ -57,11 +57,14 @@ function Navbar() {
           Services
         </Link>
       </nav>
-      <button className="nav-btn" onClick={showNavbar}>
-        <span className={shouldShowWhiteIcon ? "icon-white" : "icon-black"}>
-          {isNavOpen ? <FaTimes /> : <FaBars />}
-        </span>
-      </button>
+      <div className="d-flex align-items-center gap-4">
+        <button className="btn btn-appoinment">Book Appointment</button>
+        <button className="nav-btn" onClick={showNavbar}>
+          <span className={shouldShowWhiteIcon ? "icon-white" : "icon-black"}>
+            {isNavOpen ? <FaTimes /> : <FaBars />}
+          </span>
+        </button>
+      </div>
     </header>
   );
 }

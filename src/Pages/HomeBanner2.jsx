@@ -3,12 +3,7 @@ import "../Components/HomeVideo.css";
 
 const HomeBanner2 = () => {
   return (
-    <div
-      className="video-container"
-      style={{
-        backgroundColor: "#e4e1d6",
-      }}
-    >
+    <div className="video-container home-container">
       {/* Video that fades in */}
       <div className="background-wrapper">
         <div className="video-overlay">
