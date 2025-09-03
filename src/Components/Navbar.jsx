@@ -58,7 +58,7 @@ function Navbar() {
         </Link>
       </nav>
       <div className="d-flex align-items-center gap-4">
-        <button className="btn btn-appoinment">Book Appointment</button>
+        {/* <button className="btn btn-appoinment">Book Appointment</button> */}
         <button className="nav-btn" onClick={showNavbar}>
           <span className={shouldShowWhiteIcon ? "icon-white" : "icon-black"}>
             {isNavOpen ? <FaTimes /> : <FaBars />}
