@@ -13,7 +13,7 @@ const HomeBanner = () => {
             className={`d-flex flex-column justify-content-center align-items-center ${styles.backimg1}`}
           >
             <h2 className={styles.sectionTitle}>Transformative Hair Service</h2>
-            <button className={styles.ctaButton}>BOOK NOW</button>
+            {/* <button className={styles.ctaButton}>BOOK NOW</button> */}
           </div>
         </Col>
         <Col md="6">
@@ -22,7 +22,7 @@ const HomeBanner = () => {
           >
             <h2 className={styles.sectionTitle}>Explore Our Products</h2>
             <Link to="/Products">
-              <button className={styles.ctaButton}>SHOP HERE</button>
+              {/* <button className={styles.ctaButton}>SHOP HERE</button> */}
             </Link>
           </div>
         </Col>
