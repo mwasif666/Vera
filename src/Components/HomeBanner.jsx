@@ -20,10 +20,10 @@ const HomeBanner = () => {
           <div
             className={`d-flex flex-column justify-content-end align-items-center ${styles.backimg2}`}
           >
-            <h2 className={styles.sectionTitle}>Explore Our Products</h2>
-            <Link to="/Products">
-              {/* <button className={styles.ctaButton}>SHOP HERE</button> */}
-            </Link>
+            {/* <h2 className={styles.sectionTitle}>Explore Our Products</h2>
+            <Link to="/Products"> */}
+            {/* <button className={styles.ctaButton}>SHOP HERE</button> */}
+            {/* </Link> */}
           </div>
         </Col>
       </Row>
