@@ -165,7 +165,7 @@ const LadiesSection = () => {
           <div key={category} className="category-section">
             <div className="button-title">
               <h3 className="category-title">{category}</h3>
-              <button className="">BOOK NOW</button>
+              {/* <button className="">BOOK NOW</button> */}
             </div>
             <div className="row">
               {products.map((product) => (
