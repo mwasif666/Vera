@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "../Styles/ContactForm.module.css";
-import { FaWhatsapp, FaClock } from "react-icons/fa";
-import { IoChatbubbleEllipses } from "react-icons/io5";
+import { FaClock } from "react-icons/fa";
+import { MdOutlinePhoneInTalk } from "react-icons/md";
+import { FiMapPin } from "react-icons/fi";
 
 const ContactForm = () => {
   return (
@@ -12,15 +13,18 @@ const ContactForm = () => {
             <h1 className={styles.contactTitle}>Contact us</h1>
 
             <div className={styles.contactInfo}>
-              <IoChatbubbleEllipses className={styles.icon} />
+              <FiMapPin className={styles.icon} />
               <p className={styles.contactItem}>
-                <span> +971 (4) 000 0000</span>
-                <span>info@verabynaureen.com</span>
+                <span>
+                  {" "}
+                  Villa no.3, 3620568, Al-Wasl Road, Umm-e-Suqaim 2nd, Dubai,
+                  U.A.E PO Box 567005
+                </span>
               </p>
             </div>
             <div className={styles.contactInfo}>
-              <FaWhatsapp className={styles.icon} />
-              <p className={styles.contactItem}>+971 (4) 000 0000</p>
+              <MdOutlinePhoneInTalk className={styles.icon} />
+              <p className={styles.contactItem}>+971 434 323 53</p>
             </div>
             <div className={styles.contactInfo}>
               <FaClock className={styles.icon} />

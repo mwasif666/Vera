@@ -19,34 +19,28 @@ const Footer = () => {
               <li>
                 <Link to="/">Home</Link>
               </li>
-              <li>
-                <Link to="/Products">Products</Link>
-              </li>
+
               <li>
                 <Link to="/Services">Services</Link>
               </li>
             </ul>
           </div>
-          <div className="col-6 col-md-3 col-lg-2">
-            <h6 className="footer-heading">Our Services</h6>
+          <div className="col-6 col-md-6 col-lg-4">
+            <h6 className="footer-heading">Contact</h6>
             <ul className="list-unstyled">
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
+              <li>+97143432353</li>
+            </ul>
+            <h6 className="footer-heading">Address</h6>
+            <ul className="list-unstyled">
+              <li>
+                Villa no.3, 3620568, Al-Wasl Road, Umm-e-Suqaim 2nd, Dubai,
+                U.A.E PO Box 567005
+              </li>
             </ul>
           </div>
 
-          <div className="col-6 col-md-4 col-lg-2">
-            <h6 className="footer-heading">Shop Vera</h6>
-            <ul className="list-unstyled">
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-            </ul>
-          </div>
           <div className="col-12 col-md-8 col-lg-3">
+            <h6 className="footer-heading">Join & Stay Connected</h6>
             <p className="footer-newsletter-text mb-2">
               Stay updated with the latest wellness trends!
             </p>
@@ -59,13 +53,6 @@ const Footer = () => {
               <Button className="Join-btn px-4">JOIN</Button>
             </Form>
             <div className="footer-contact d-flex align-items-center justify-content-between">
-              <div>
-                <p className="fw-bold mb-1">Find Us</p>
-                <p className="mb-0">Villa 1, Jumeirah 1, Dubai</p>
-                <p className="mb-0">United Arab Emirates</p>
-                <p>P.O. Box 00000</p>
-              </div>
-
               <div className="d-flex gap-3">
                 <FaInstagram className="footer-icon" />
                 <FaFacebookF className="footer-icon" />
