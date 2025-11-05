@@ -19,8 +19,8 @@ const HomePage = () => {
       <About />
       <Show />
       <WhyVera />
-      <Team />
-      <BlogPost />
+      {/* <Team /> */}
+      {/* <BlogPost /> */}
       <ContactForm />
     </div>
   );
