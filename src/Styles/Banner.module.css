@@ -15,7 +15,7 @@
   font-weight: 300;
   color: white;
   font-family: "Bodoni", serif;
-  padding-top: 20px;
+  padding-top: 50px;
   line-height: 50px;
   letter-spacing: 2px;
 }
@@ -24,7 +24,9 @@
   font-weight: 300;
   color: white;
   font-family: "Bodoni", serif;
-  padding-top: 20px;
+  /* padding-top: 20px; */
+  position: relative;
+  bottom: 450px;
   line-height: 50px;
   letter-spacing: 2px;
 }
@@ -41,7 +43,7 @@
 .backimg3 .ctaButton {
   background-color: transparent;
   border: 1px solid white;
-  padding: .2rem 2rem;
+  padding: 1rem 2rem;
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -51,6 +53,8 @@
   font-family: "Montserrat", sans-serif;
   color: white;
   border-radius: 20px;
+  position: relative;
+  top: 180px;
 }
 .backimg2 .ctaButton {
   background-color: transparent;
@@ -106,6 +110,9 @@
   .backimg1 {
     height: 100vh;
   }
+  .backimg3 {
+    height: 100vh;
+  }
   .section {
     height: 100%;
     text-align: center;
@@ -113,17 +120,21 @@
   .backimg1 h2 {
     font-size: 1.6rem;
     line-height: 30px;
-  }
-  .backimg2 h2 {
+        position: relative;
+        bottom: 350px;
+        }
+  .backimg3 h2 {
     font-size: 1.6rem;
     line-height: 30px;
   }
   .backimg2 {
     padding-bottom: 30px;
   }
-  .backimg1 .ctaButton {
+  .backimg3 .ctaButton {
     padding: 0.4rem 2rem;
     font-size: 1rem;
+     position: relative;
+    top: 50px;
   }
   .backimg2 .ctaButton {
     padding: 0.4rem 2rem;
@@ -135,17 +146,21 @@
   .backimg1 h2 {
     font-size: 1.6rem;
     line-height: 30px;
+            position: relative;
+        bottom: 370px;
+
   }
-  .backimg2 h2 {
+  .backimg3 h2 {
     font-size: 1.6rem;
     line-height: 30px;
   }
   .backimg2 {
     padding-bottom: 30px;
   }
-  .backimg1 .ctaButton {
-    padding: 0.4rem 2rem;
-    font-size: 1rem;
+  .backimg3 .ctaButton {
+    padding: 0.4rem 1rem;
+    font-size: .8rem;
+
   }
   .backimg2 .ctaButton {
     padding: 0.4rem 2rem;
@@ -157,17 +172,22 @@
   .backimg1 h2 {
     font-size: 2rem;
     line-height: 30px;
+    position: relative;
+        bottom: 370px;
+
+
   }
-  .backimg2 h2 {
+  .backimg3 h2 {
     font-size: 2rem;
     line-height: 30px;
   }
   .backimg2 {
     padding-bottom: 30px;
   }
-  .backimg1 .ctaButton {
+  .backimg3 .ctaButton {
     padding: 0.4rem 2rem;
     font-size: 1rem;
+   
   }
   .backimg2 .ctaButton {
     padding: 0.4rem 2rem;

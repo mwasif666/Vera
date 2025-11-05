@@ -8,6 +8,8 @@ import GentsServices from "./Pages/GentsServices";
 import Services from "./Pages/Services";
 import Footer from "./Pages/Footer";
 import LadiesServices from "./Pages/LadiesServices";
+// import Menu from "./Components/Menu";
+
 
 const Preloader = () => {
   return (
@@ -55,6 +57,7 @@ const AppWrapper = () => {
           <Route path="/Services" element={<Services />} />
           <Route path="/GentsServices" element={<GentsServices />} />
           <Route path="/LadiesServices" element={<LadiesServices />} />
+          {/* <Route path="/Menu" element={<Menu />} /> */}
         </Routes>
         <Footer />
       </div>

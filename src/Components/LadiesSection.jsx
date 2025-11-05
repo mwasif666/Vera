@@ -251,7 +251,7 @@ const LadiesSection = () => {
             </div>
 
             <div className="header-icons">
-              <h5>Gents Service Menu</h5>
+              <h5>Ladies Service Menu</h5>
             </div>
           </div>
         </div>

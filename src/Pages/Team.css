@@ -124,7 +124,7 @@
   color: white;
   font-weight: 500;
 }
-.team-up button {
+/* .team-up button {
   background-color: transparent;
   border: 1px solid white;
   padding: 0.5rem 5rem;
@@ -137,6 +137,24 @@
   font-family: "Montserrat", sans-serif;
   color: white;
   border-radius: 20px;
+} */
+.ctaButton{
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 0.5rem 5rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  border-radius: 20px;
+}
+.ctaButton:hover {
+  background-color: white;
+  color: var(--primary-color);
 }
 @media all and (min-width: 300px) and (max-width: 768px) {
   .team-up {

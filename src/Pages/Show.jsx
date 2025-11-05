@@ -1,5 +1,7 @@
 import React from "react";
 import "./Team.css";
+import { Link } from "react-router-dom";
+
 
 const Show = () => {
   return (
@@ -14,7 +16,10 @@ const Show = () => {
           <div className="col-md-5 p-0 team-up">
             <div className="d-flex flex-column justify-content-center align-items-center h-100">
               <h2>Discover Our Services</h2>
-              <button>Menu</button>
+              {/* <button>Menu</button> */}
+              <Link to="/Services"> 
+            <button className="ctaButton">Menu</button>
+             </Link>
             </div>
           </div>
         </div>
