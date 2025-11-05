@@ -8,15 +8,18 @@ const HomeBanner = () => {
     <Container fluid className="p-0">
       {/* First Section - Transformative Hair Service */}
       <Row className={`g-0 ${styles.section} ${styles.firstSection}`}>
-        <Col md="6">
+       
+        <Col md="4">
           <div
-            className={`d-flex flex-column justify-content-center align-items-center ${styles.backimg1}`}
+            className={`d-flex flex-column justify-content-end align-items-center ${styles.backimg1}`}
           >
-            <h2 className={styles.sectionTitle}>Transformative Hair Service</h2>
-            {/* <button className={styles.ctaButton}>BOOK NOW</button> */}
+            <h2 className={styles.sectionTitle}>Self-care,redefined</h2>
+            {/* <Link to="/Products"> */}
+            {/* <button className={styles.ctaButton}>SHOP HERE</button> */}
+            {/* </Link> */}
           </div>
         </Col>
-        <Col md="6">
+        <Col md="4">
           <div
             className={`d-flex flex-column justify-content-end align-items-center ${styles.backimg2}`}
           >
@@ -24,6 +27,14 @@ const HomeBanner = () => {
             <Link to="/Products"> */}
             {/* <button className={styles.ctaButton}>SHOP HERE</button> */}
             {/* </Link> */}
+          </div>
+        </Col>
+         <Col md="4">
+          <div
+            className={`d-flex flex-column justify-content-center align-items-center ${styles.backimg3}`}
+          >
+            <h2 className={styles.sectionTitle}>Transformative Hair Service</h2>
+            <button className={styles.ctaButton}>View Hair Services</button>
           </div>
         </Col>
       </Row>

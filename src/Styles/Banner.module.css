@@ -10,9 +10,18 @@
   text-transform: lowercase;
 }
 
+.backimg3 h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  color: white;
+  font-family: "Bodoni", serif;
+  padding-top: 20px;
+  line-height: 50px;
+  letter-spacing: 2px;
+}
 .backimg1 h2 {
-  font-size: 2.5rem;
-  font-weight: 400;
+  font-size: 2rem;
+  font-weight: 300;
   color: white;
   font-family: "Bodoni", serif;
   padding-top: 20px;
@@ -29,11 +38,11 @@
   letter-spacing: 2px;
 }
 
-.backimg1 .ctaButton {
+.backimg3 .ctaButton {
   background-color: transparent;
   border: 1px solid white;
-  padding: 0.6rem 3rem;
-  font-size: 1.4rem;
+  padding: .2rem 2rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   cursor: pointer;
@@ -65,15 +74,24 @@
   background-color: white;
   color: var(--primary-color);
 }
-.backimg2 {
-  background-image: url(../../public/assets/images/Banners/2.png);
+.backimg1 {
+  background-image: url(../../public/assets/images/Banners/baner2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 100%;
 }
-.backimg1 {
+.backimg2 {
+  background-image: url(../../public/assets/images/Banners/baner3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.backimg3 {
   background-image: url(../../public/assets/images/Banners/1.png);
   background-position: center;
   background-repeat: no-repeat;
