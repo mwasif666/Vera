@@ -14,9 +14,11 @@ const HomeBanner = () => {
             className={`d-flex flex-column justify-content-end align-items-center ${styles.backimg1}`}
           >
             <h2 className={styles.sectionTitle}>Self-care,redefined</h2>
-            {/* <Link to="/Products"> */}
-            {/* <button className={styles.ctaButton}>SHOP HERE</button> */}
-            {/* </Link> */}
+            
+            <Link to="/Packages"> 
+            <button className={styles.ctaButton}>Packages</button>
+            </Link>
+            
           </div>
         </Col>
         <Col md="4">
@@ -34,7 +36,10 @@ const HomeBanner = () => {
             className={`d-flex flex-column justify-content-center align-items-center ${styles.backimg3}`}
           >
             <h2 className={styles.sectionTitle}>Transformative Hair Service</h2>
+            {/* <button className={styles.ctaButton}>View Hair Services</button> */}
+             <Link to="/Services"> 
             <button className={styles.ctaButton}>View Hair Services</button>
+            </Link>
           </div>
         </Col>
       </Row>

@@ -1,0 +1,102 @@
+.class-section {
+  background-color: #fff;
+  text-align: center;
+  padding: 100px 0;
+  font-family: "Montserrat", serif;
+  color: #3a322d;
+}
+
+.section-subtitle {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  color: #b3a48f;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.8rem;
+  font-weight: 500;
+  margin-bottom: 60px;
+  color: #2a2725;
+}
+
+.package-block {
+  margin-bottom: 60px;
+}
+
+.package-heading {
+  font-family: "Playfair Display", serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 25px;
+  color: #2a2725;
+}
+
+.package-list {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  border-top: 1px solid #d9d2c7;
+  border-bottom: 1px solid #d9d2c7;
+  padding: 25px 0;
+}
+
+.package-list li {
+  margin-bottom: 10px;
+  color: #5e554f;
+}
+
+.package-list span {
+  color: #b09777;
+  font-weight: 500;
+}
+
+.package-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.package-card {
+  flex: 1 1 220px;
+  max-width: 250px;
+  padding: 0px 20px;
+  padding-bottom: 25px;
+  border-left: 1px solid #d9d2c7;
+  border-right: 1px solid #d9d2c7;
+}
+
+.package-card h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+  color: #3a322d;
+  margin-bottom: 8px;
+}
+
+.package-card p {
+  font-weight: 600;
+  color: #b09777;
+  margin-bottom: 5px;
+}
+
+.package-card span {
+  font-size: 0.95rem;
+  color: #5e554f;
+}
+
+.package-note {
+  font-size: 0.9rem;
+  color: #7d736a;
+  max-width: 750px;
+  margin: 50px auto 0;
+  line-height: 1.7;
+  border-top: 1px solid #e2d9cc;
+  padding-top: 25px;
+}

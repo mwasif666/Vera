@@ -13,13 +13,22 @@
 }
 
 .imageWrapper {
-  position: relative;
+  /* position: relative; */
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  height: 554px;
+}
+.imageWrapper img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: left;
 }
 .maindivvera {
-  position: relative;
+overflow: hidden;
+  /* position: relative; */
+  height: auto;
 }
 .salonImage {
   width: 100%;
@@ -35,8 +44,9 @@
 
 .contentWrapper {
   padding: 4rem 6rem !important;
-  position: absolute;
-  top: 110px;
+  /* position: absolute; */
+  /* top: 60px; */
+  /* top: 110px; */
   right: 90px;
   background-color: #797663;
   color: white;

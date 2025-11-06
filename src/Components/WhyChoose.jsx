@@ -15,12 +15,12 @@ const WhyVera = () => {
       <div className="container">
         <div className={`${styles.maindivvera} row align-items-center `}>
           {/* Image Column - takes full width on mobile, half on larger screens */}
-          <div className="col-md-10 mb-4 mb-md-0">
+          <div className="col-md-6 mb-4 mb-md-0">
             <div className={styles.imageWrapper}>
               <img
-                src="/assets/images/Banners/5.jpg"
+                src="/assets/images/Banners/5.png"
                 alt="Vera Salon Interior"
-                className={styles.Whyvera}
+                className={styles.Whyvera2}
               />
             </div>
           </div>

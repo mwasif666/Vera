@@ -11,19 +11,21 @@
 }
 
 .backimg3 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 300;
   color: white;
-  font-family: "Bodoni", serif;
+  /* font-family: "Bodoni", serif; */
+  font-family: "Montserrat", serif;
   padding-top: 50px;
   line-height: 50px;
   letter-spacing: 2px;
 }
 .backimg1 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 300;
   color: white;
-  font-family: "Bodoni", serif;
+  /* font-family: "Bodoni", serif; */
+  font-family: "Montserrat", serif;
   /* padding-top: 20px; */
   position: relative;
   bottom: 450px;
@@ -56,19 +58,21 @@
   position: relative;
   top: 180px;
 }
-.backimg2 .ctaButton {
+.backimg1 .ctaButton {
   background-color: transparent;
-  border: 1px solid var(--primary-color);
-  padding: 0.6rem 3rem;
-  font-size: 1.4rem;
+  border: 1px solid white;
+  padding: 1rem 2rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   cursor: pointer;
   transition: all 0.3s ease;
   margin-top: 1rem;
   font-family: "Montserrat", sans-serif;
-  color: var(--primary-color);
+  color: white;
   border-radius: 20px;
+  position: relative;
+  top: -70px;
 }
 .backimg2 {
   padding-bottom: 55px;
