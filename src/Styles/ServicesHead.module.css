@@ -6,6 +6,7 @@
   height: 700px;
   display: flex;
   align-items: center;
+  background-image: url("../../public/assets/images/Banners/patt.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

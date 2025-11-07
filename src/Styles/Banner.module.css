@@ -125,7 +125,13 @@
     font-size: 1.6rem;
     line-height: 30px;
         position: relative;
-        bottom: 350px;
+        bottom: 600px;
+        }
+        .backimg1 .ctaButton{
+          padding: 0.4rem 2rem;
+    font-size: 1rem;
+     position: relative;
+    top: -150px;
         }
   .backimg3 h2 {
     font-size: 1.6rem;
@@ -138,7 +144,7 @@
     padding: 0.4rem 2rem;
     font-size: 1rem;
      position: relative;
-    top: 50px;
+    top: 250px;
   }
   .backimg2 .ctaButton {
     padding: 0.4rem 2rem;

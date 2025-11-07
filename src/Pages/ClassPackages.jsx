@@ -3,6 +3,39 @@ import "./ClassPackages.css";
 
 const ClassPackages = () => {
   return (
+    <>
+
+<section className="membership-intro container py-5">
+      <div className="row align-items-center">
+        {/* Left Column - Image */}
+        <div className="col-md-6">
+          <img
+            src="https://s3-ap-southeast-1.amazonaws.com/atap-main/gallery-full/f1d93e54-a9a9-4d57-b99e-49a0a5457fb2/bion-premium-hair-salon.jpg"
+            alt="Premium Membership"
+            className="img-fluid rounded-4 shadow-sm"
+          />
+        </div>
+
+        {/* Right Column - Content */}
+        <div className="col-md-6">
+          <div className="intro-content ps-md-4 mt-4 mt-md-0">
+            <h2 className="fw-bold mb-3">Class Packages</h2>
+            <p className="text-muted mb-4">
+              Find your rhythm and build consistency with our Class Packages — whether you’re just starting your wellness journey or deepening your daily practice. From yoga and barre to reformer pilates and sound healing, each session is designed to help you move, breathe, and reconnect.
+            </p>
+            <p className="text-muted mb-4">
+              Choose a flexible pack that fits your routine, or drop in for a single class — because wellness should work around you.
+            </p>
+            {/* <a href="#packages" className="btn btn-dark rounded-pill px-4 py-2">
+              Explore Packages
+            </a> */}
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    {/* intro End */}
       <section className="class-section">
       <p className="section-subtitle">Mind • Body • Balance</p>
       <h2 className="section-title">Class Packages</h2>
@@ -66,6 +99,7 @@ const ClassPackages = () => {
         or booked via the credit system.
       </p>
     </section>
+</>
   );
 };
 

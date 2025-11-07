@@ -56,6 +56,9 @@ function Navbar() {
         <Link to="/Services" onClick={closeNavbar}>
           Services
         </Link>
+        <Link to="/Packages" onClick={closeNavbar}>
+          Packages
+        </Link>
       </nav>
       <div className="d-flex align-items-center gap-4">
         {/* <button className="btn btn-appoinment">Book Appointment</button> */}

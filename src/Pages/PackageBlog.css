@@ -1,6 +1,10 @@
 .Products {
   padding: 4rem 2rem;
   text-align: center;
+  background-image: url('../../public/assets/images/Banners/patt.png');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #393626;
   color: white;
   height: 700px;
@@ -9,7 +13,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
+  width: 100vw;
   justify-content: center;
 }
 .Products h1 {

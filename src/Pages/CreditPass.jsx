@@ -3,6 +3,43 @@ import "./CreditPass.css";
 
 const CreditPass = () => {
   return (
+    <>
+<section className="membership-intro container py-5">
+      <div className="row align-items-center">
+        {/* Left Column - Image */}
+        <div className="col-md-6">
+          <div className="intro-content ps-md-4 mt-4 mt-md-0">
+            <h2 className="fw-bold mb-3">Credit Based Wellness Pass</h2>
+            <p className="text-muted mb-4">
+              Flexible, simple, and designed around your schedule — our Credit Based Wellness Pass lets you create your own wellness routine. Whether you’re here for mindful movement, deep relaxation, or advanced tech treatments, each credit gives you the freedom to book what your body needs, when it needs it.
+
+            </p>
+            <p className="text-muted mb-4">
+              
+Choose the pass that suits your lifestyle and enjoy complete flexibility — no commitments, just pure wellness at your own pace.
+            </p>
+            {/* <a href="#packages" className="btn btn-dark rounded-pill px-4 py-2">
+              Explore Packages
+            </a> */}
+          </div>
+        </div>
+
+        {/* Right Column - Content */}
+<div className="col-md-6">
+          <img
+            src="https://franchiseindia.s3.ap-south-1.amazonaws.com/uploads/content/wi/art/image1000-1b9fc0d40b.jpg"
+            alt="Premium Membership"
+            className="img-fluid rounded-4 shadow-sm"
+          />
+        </div>
+
+
+        
+      </div>
+    </section>
+
+{/* Intro End */}
+
     <section className="creditpass-section container text-center my-5">
       <h4 className="subheading">Credit Based Wellness Pass</h4>
 
@@ -47,6 +84,7 @@ const CreditPass = () => {
         </ul>
       </div>
     </section>
+    </>
   );
 };
 
